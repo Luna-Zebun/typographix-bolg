@@ -14,6 +14,7 @@ body{
     background-color: white;
     line-height: 1.6;
 }
+/* main */
 main{
     width: 80%;  
     margin: 50px auto;
@@ -37,7 +38,7 @@ main a{
     main a:hover{
         color: hsl(240, 87%, 30%);
     }
-/* header & navbar */
+/* navbar */
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -55,13 +56,14 @@ main a{
 .nav-right a:hover{
     color: hsl(0, 0%,25%);
     background-color: whitesmoke;
-} 
+}
 /* main article */
 .main-article img{
     width: 100%;
     max-height: 220px;
     object-fit: cover;
 }
+/* group-of-articles */
 .group-of-articles{
     display: flex;
     justify-items: space-between;
@@ -73,7 +75,6 @@ main a{
     object-fit: cover;
     border-radius: 5px;
 }
-
 .first-article,
 .second-article,
 .third-article
@@ -82,9 +83,8 @@ main a{
     box-shadow:0px 0px 15px rgba(0, 0, 0, 0.1) ;
     margin: 10px;
     border-radius: 5px;
-
 }
-
+/* footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -100,15 +100,7 @@ footer{
 .icons a:hover{
     color: hsl(0, 0%, 25%);
 }
-
-/* js */
-.nav-left h1{
-    font-size: 2rem;
-    transition: font-size 0.3s ease;
-}
-/* #navbar.scrolled .nav-left h1{
-    font-size: 1rem;
-} */
+/* responsive properties */
 @media (max-width:600px){
     main{
         width: 90%;
@@ -139,7 +131,6 @@ footer{
         flex-direction: column;
     }
 }
-
 @media (min-width:601px) and (max-width:800px){
     main{
         width: 90%;

@@ -10,6 +10,7 @@ body{
     background-color: whitesmoke;
     line-height: 1.6;
 }
+/* main */
 main{
     margin: 50px auto;
 }
@@ -19,7 +20,7 @@ main p {
 main h1{
     font-size: 28px;
 }
-/* header & navbar */
+/* navbar */
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@ main h1{
     color: hsl(0, 0%,25%);
     background-color: whitesmoke;
 }
+/* first-article */
 .first-article{
     display: flex;
     justify-content: space-between;
@@ -71,15 +73,7 @@ footer{
 .icons a:hover{
     color: hsl(0, 0%, 25%);
 }
-
-/* js */
-.nav-left h1{
-    font-size: 2rem;
-    transition: font-size 0.3s ease;
-}
-/* #navbar.scrolled.nav-left h1{
-    font-size: 1rem;
-} */
+/* responsive properties */
 @media (max-width:800px) {
     .nav-left h1{
         font-size: 1.5rem;

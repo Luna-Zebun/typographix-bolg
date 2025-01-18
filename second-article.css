@@ -10,14 +10,15 @@ body{
     background-color: whitesmoke;
     line-height: 1.6;
 }
+/* main */
 main{
     margin: 50px auto;
 }
 main p {
-font-size: 14px;
+    font-size: 14px;
 }
 main h1{
-font-size: 28px;
+    font-size: 28px;
 }
 /* header & navbar */
 #navbar{
@@ -39,6 +40,7 @@ font-size: 28px;
     color: hsl(0, 0%,25%);
     background-color: whitesmoke;
 }
+/*  second-article */
 .second-article{
     display: flex;
     flex-direction: row-reverse;
@@ -55,6 +57,7 @@ img{
     width: 36%;
     margin-left: 218px;
 }
+/* footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -70,14 +73,7 @@ footer{
 .icons a:hover{
     color: hsl(0, 0%, 25%);
 }
-/* js */
-.nav-left h1{
-    font-size: 2rem;
-    transition: font-size 0.3s ease;
-}
-#navbar.scrolled.nav-left h1{
-    font-size: 1rem;
-}
+/* responsive properties */
 @media (max-width:800px) {
     .nav-left h1{
         font-size: 1.5rem;
