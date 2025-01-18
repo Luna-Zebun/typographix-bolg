@@ -10,35 +10,27 @@ body{
     background-color: whitesmoke;
     line-height: 1.6;
 }
+/* main */
 main{
-
-  margin: 50px auto;
+    margin: 50px auto;
 }
 main p {
-font-size: 14px;
+    font-size: 14px;
 }
 main h1{
-font-size: 28px;
+    font-size: 28px;
 }
 /* header & navbar */
 #navbar{
-    z-index: 10;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 54px;
-    top: 0;
+    background-color: white;
+    height: 60px;
+    position: sticky;
+    top:0;
 }
-.nav-left{
-        top: -31px;
-        position: relative;
-}
-.nav-right{
-position: fixed;
-top: 13px;
-right: 0;
-z-index: 10;
-} 
 .nav-right a{
     padding: 20px;
     color: hsl(0, 0%, 10%);
@@ -48,27 +40,24 @@ z-index: 10;
     color: hsl(0, 0%,25%);
     background-color: whitesmoke;
 }
-
+/*  second-article */
 .second-article{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-
 }
 img{
     margin-right: 10%;
     margin-top: 13px;
-    width: 26%;
-    max-height: 436px;
-    border-radius: 5px;
+    width: 31%;
+    max-height: 334px;
     box-shadow: 4px 8px 20px 15px rgba(0, 0, 0, 0.1) ;
 }
 .content-second-article {
     width: 36%;
-    margin-left: 331px;
+    margin-left: 218px;
 }
-
-
+/* footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -84,12 +73,33 @@ footer{
 .icons a:hover{
     color: hsl(0, 0%, 25%);
 }
+/* responsive properties */
+@media (max-width:800px) {
+    .nav-left h1{
+        font-size: 1.5rem;
+    }
+    .nav-right a{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    main{
+        width: 95%;
+        margin: 26px auto;
+    }
+    .second-article{
+        flex-direction: column;  
+    }
+    img{
+        width: 96%;
+        max-height: 50vh;
+        height: auto;
+        object-fit: cover;
+        margin-left: 0%;
 
-/* js */
-.nav-left h1{
-    font-size: 2rem;
-    transition: font-size 0.3s ease;
-}
-#navbaar.scrolled.nav-left h1{
-    font-size: 1rem;
-}
+    }
+    .content-second-article {
+        width: 80%;
+        padding-right: 0%;
+        margin-left: 30px;
+    }
+}   

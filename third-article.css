@@ -11,55 +11,45 @@ body{
     background-color: whitesmoke;
     line-height: 1.6;
 }
+/* main */
 main{
-
-  margin: 50px auto;
+    margin: 50px auto;
 }
 main p {
-font-size: 14px;
+    font-size: 14px;
 }
 main h1{
-font-size: 28px;
+    font-size: 28px;
 }
-/* header & navbar */
+/*navbar */
 #navbar{
-    z-index: 10;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 54px;
-    top: 0;
+    background-color: white;
+    height: 60px;
+    position: sticky;
+    top:0;
 }
-.nav-left{
-        top: -31px;
-        position: relative;
-}
-.nav-right{
-position: fixed;
-top: 13px;
-right: 0;
-z-index: 10;
-} 
 .nav-right a{
     padding: 20px;
     color: hsl(0, 0%, 10%);
-
 }
 .nav-right a:hover{
     color: hsl(0, 0%,25%);
     background-color: whitesmoke;
 }
-
+/* third-article*/
 .third-article{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 img{
-    width: 25%;
-    max-height: 445px;
-    margin-left: 6%;
+    width: 26%;
+    max-height: 340px;
+    margin-left: 8%;
     margin-top: 13px;
     border-radius: 5px;
     box-shadow: 4px 8px 20px 15px rgba(0, 0, 0, 0.1) ;
@@ -67,10 +57,8 @@ img{
 .content-third-article {
     width: 41%;
     padding-right: 26%;
-
 }
-
-
+/* footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -86,13 +74,39 @@ footer{
 .icons a:hover{
     color: hsl(0, 0%, 25%);
 }
-
-/* js */
 .nav-left h1{
     font-size: 2rem;
     transition: font-size 0.3s ease;
 }
-#navbaar.scrolled.nav-left h1{
+#navbar.scrolled.nav-left h1{
     font-size: 1rem;
 }
+/* responsive properties */
+@media (max-width:800px) {
+    .nav-left h1{
+        font-size: 1.5rem;
+    }
+    .nav-right a{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    main{
+        width: 95%;
+    }
+    .third-article{
+        flex-direction: column;  
+    }
+    img{
+        width: 96%;
+        max-height: 50vh;
+        height: auto;
+        object-fit: cover;
+        margin-left: 0%;
+    }
+    .content-third-article{
+        width: 80%;
+        padding-right: 0%;
+        margin-left: 30px;
+    }
+} 
 
