@@ -1,1 +1,7 @@
 *.png
+# Node modules
+node_modules/
+
+
+# Source maps
+*.map

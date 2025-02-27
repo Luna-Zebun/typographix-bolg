@@ -1,0 +1,22 @@
+{
+  "name": "typographix-blog-v2",
+  "version": "1.0.0",
+  "description": "typographix blog using SCSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luna-Zebun/typographix-bolg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luna-Zebun/typographix-bolg/issues"
+  },
+  "homepage": "https://github.com/Luna-Zebun/typographix-bolg#readme",
+  "devDependencies": {
+    "sass": "^1.85.1"
+  }
+}
